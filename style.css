@@ -1,0 +1,15 @@
+input.form, select.form {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid hsl(0, 4%, 35%);
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+}
+
+textarea:focus, input:focus, select:focus{
+  outline: none
+}

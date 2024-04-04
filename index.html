@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/src/tailwind.js"></script>
+  <link rel="stylesheet" href="/src/style.css">
+  <title>Checklist</title>
+</head>
+<body class="m-0 p-0 w-screen h-screen">
+  <div class="button-container flex justify-center py-5">
+    <div onclick="addTask()" class="add-task shadow-lg p-4 cursor-pointer">+ Add Task</div>
+    <div onclick="removeTask()"class="remove-task shadow-lg p-4 cursor-pointer">- Remove Task</div>
+  </div>
+  <div class="input-container flex flex-col w-1/2 m-auto justify-center py-5">
+    <form>
+      <select class="form" name="family-project p-4" id="family-project">
+        <option value="Familly IKEA SG">Family IKEA SG</option>
+        <option value="Familly IKEA TH">Family IKEA TH</option>
+        <option value="Familly IKEA MX">Family IKEA MX</option>
+        <option value="Familly IKEA MY">Family IKEA MY</option>
+        <option value="Familly IKEA PH">Family IKEA PH</option>
+      </select>
+      <input type="text" value="" placeholder="Task Name" class="block mb-2 border w-50 text-sm text-gray-900 form" name="task-name" id="task-id">
+      <input type="text" placeholder="Link" class="block mb-2 border w-50 text-sm text-gray-900 form" name="link-name" id="link-id">
+    </form>
+  </div>
+  <div class="flex flex-col m-auto justify-center items-center p-10" id="checklist-container">
+  </div>
+</body>
+<script src="/src/script.js"></script>
+</html>
