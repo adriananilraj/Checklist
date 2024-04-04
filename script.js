@@ -15,7 +15,7 @@ const getLocalStorage = () => {
         <div class="flex flex-col">
           <h3 class="text-lg font-bold">${form.projectName}</h3>
           <p>${form.name}</p>
-          <a class='text-sky-500 underline' href=${form.link}>Link</a>
+          <a target="_blank" class='text-sky-500 underline' href=${form.link}>Link</a>
         </div>
       </div>
       `
